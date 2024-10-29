@@ -42,18 +42,7 @@ const Navbar = () => {
                     </div>
                     <div className="nav-item">
                         <a className="nav-link" onClick={() => {
-                      
-                      const link = document.createElement('a');
-                      link.href = '/MeetGamiResume.pdf';
-                      link.target='_blank'
-
-                     
-                      document.body.appendChild(link);
-                      link.click();
-                      document.body.removeChild(link);
-
-                     
-                      window.open('public/MeetGamiResume.pdf', '_blank');
+                          window.open('public/MeetGamiResume.pdf', '_blank');
                     }}><FontAwesomeIcon icon={faFileAlt} size="1x" color="black" /> Resume</a>
                     </div>
                     </div>
