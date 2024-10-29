@@ -65,9 +65,9 @@ const Home = () =>{
             <StarryBackground/>
             <Navbar/>
             <Greet/>
-            <div id="projects" style={{height:"30px"}}></div>
+            <div id="projects"></div>
             <div className="project" data-aos="zoom-in">
-                <div style={{padding:"30px 0px"}}>
+                <div className="heading">
                     <h4>Project's</h4>
                 </div>
                 <div className="container" data-aos="zoom-in">

@@ -1,11 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Lato');
 
 .content {
-  /* position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  height: 160px; */
   overflow: hidden;
   font-family: 'Lato', sans-serif;
   font-size: 35px;
@@ -76,4 +71,48 @@
   49.98%, 62.64% { transform: translate3d(0, -75%, 0); }
   66.64%, 79.3% { transform: translate3d(0, -50%, 0); }
   83.3%, 95.96% { transform: translate3d(0, -25%, 0); }
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .content {
+    font-size: 28px; /* Smaller font size for mobile */
+    line-height: 32px; /* Adjust line height */
+  }
+
+  .content__container {
+    padding: 0px 20px; /* Reduced padding for mobile */
+  }
+
+  .content__container:before,
+  .content__container:after {
+    font-size: 32px; /* Smaller brackets */
+    line-height: 30px; /* Adjust line height for brackets */
+  }
+
+  .content__container__list {
+    animation: change 8s infinite; /* Speed up animation */
+  }
+}
+
+@media (max-width: 576px) {
+  .content {
+    font-size: 24px; /* Further reduce font size for smaller screens */
+    line-height: 35px; /* Adjust line height further */
+  }
+
+  .content__container {
+    padding: 0px 10px; /* Minimal padding for very small screens */
+    /* height: auto; */
+  }
+
+  .content__container:before,
+  .content__container:after {
+    font-size: 28px; /* Even smaller brackets */
+    line-height: 35px; /* Adjust line height for brackets */
+  }
+
+  .content__container__list {
+    animation: change 6s infinite; /* Speed up animation further */
+  }
 }

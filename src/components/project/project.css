@@ -80,154 +80,33 @@
     height: 100%;
     object-fit: cover;
 }
-  /* .container .card .image {
-    position: relative;
-    width: 350px;
-    min-height: 300px;
-    bottom: -2%;
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
-    z-index: 1;
-    background: #ffffffe6;
-    color: #aa0000;
-    border-radius: 10px;
+@media (max-width: 768px) {
+  .project .container {
+    padding: 0px 10px;
   }
-  .imageheader{
-    background: #ffffffe6;
-    color: #aa0000;
-    border-radius: 10px;
-  } */
-  /* .container .card .image img {
-    max-width: 100%;
-    border-radius: 15px;
-  } */
-  
-  /* .container .card .content {
-    position: relative;
-    top: -140px;
-    padding: 0px 15px;
-    color: #111;
-    text-align: center;
-    visibility: hidden;
-    opacity: 0;
-    transition: 0.3s ease-in-out;
-  } */
-  
-  /* .container .card:hover .content {
-    margin-top: 30px;
-    visibility: visible;
-    opacity: 1;
-    transition-delay: 0.2s;
-  }
-  
-  .container .card:hover {
-    height: 480px;
-  } */
 
-  /* Media Queries for All Devices */
-  
-  /* For large desktops and large screens (1440px and above) */
-  /* @media (min-width: 1440px) {
-    .container .card {
-      max-width: 400px;
-      height: 350px;
-    }
-  
-    .container .card:hover {
-      height: 520px;
-    }
-  
-    .container .card .image {
-      width: 350px;
-      height: 300px;
-    }
-  
-    .container .card .content {
-      top: -130px;
-    }
-  } */
-  
-  /* For laptops and tablets in landscape (1024px to 1439px) */
-  /* @media (min-width: 1024px) and (max-width: 1439px) {
-    .container .card {
-      max-width: 380px;
-      height: 300px;
-    }
-  
-    .container .card:hover {
-      height: 460px;
-    }
-  
-    .container .card .image {
-      width: 330px;
-      height: 330px;
-    }
-  
-    .container .card .content {
-      top: -130px;
-    }
-  } */
-  
-  /* For tablets in portrait (768px to 1023px) */
-  /* @media (min-width: 768px) and (max-width: 1023px) {
-    .container .card {
-      max-width: 350px;
-      height: 280px;
-    }
-  
-    .container .card:hover {
-      height: 430px;
-    }
-  
-    .container .card .image {
-      width: 300px;
-      height: 300px;
-    }
-  
-    .container .card .content {
-      top: -120px;
-    }
-  } */
-  
-  /* For mobile devices (481px to 767px) */
-  /* @media (min-width: 481px) and (max-width: 767px) {
-    .container .card {
-      max-width: 300px;
-      height: 260px;
-      margin: 20px 10px;
-    }
-  
-    .container .card:hover {
-      height: 400px;
-    }
-  
-    .container .card .image {
-      width: 250px;
-      height: 250px;
-    }
-  
-    .container .card .content {
-      top: -100px;
-    }
-  } */
-  
-  /* For small mobile screens (480px and below) */
-  /* @media (max-width: 480px) {
-    .container .card {
-      max-width: 280px;
-      height: 240px;
-      margin: 15px 5px;
-    }
-  
-    .container .card:hover {
-      height: 380px;
-    }
-  
-    .container .card .image {
-      width: 230px;
-      height: 230px;
-    }
-  
-    .container .card .content {
-      top: -90px;
-    }
-  } */
+  .project h4 {
+    font-size: 35px; /* Smaller font for heading on smaller screens */
+  }
+
+  .image-container {
+    width: 70%; /* Expand image container for smaller screens */
+    height: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .container .card {
+    margin: 10px 0;
+    padding: 15px;
+  }
+
+  .project h4 {
+    font-size: 28px; /* Further reduce font size on very small screens */
+  }
+
+  .image-container {
+    width: 80%; /* Full width for very small screens */
+    height: auto;
+  }
+}

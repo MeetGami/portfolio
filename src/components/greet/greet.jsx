@@ -17,25 +17,25 @@ const Greet = () =>{
           <div className="home-content container">
             <div className="row">
               <div className="home-header col-md-7">
-                <h1 className="heading" style={{ paddingBottom: "15px" }}>
+                <h1 className="heading">
                   Hi There! <span className="wave" role="img" aria-labelledby="wave">👋🏻</span>
                 </h1>
-                <h1 className="heading-name" style={{display: "flex",gap: "15px",alignItems: "baseline"}}>
+                <h1 className="heading-name">
                   {/* I'M <strong className="main-name"> Meet Gami</strong> */}
                   I'M <strong className="main-name"> <AnimatedWord/></strong>
                 </h1>
-                <div style={{ padding: "50px 50px 0px 50px", textAlign: "left" }}>
+                <div className="extradiv">
                 <TextScramble/>
                   <div className="social-icons">
-                    <a className="social-icon instagram"><FontAwesomeIcon icon={faInstagram} size="3x" color="white" /></a>
-                    <a className="social-icon github"><FontAwesomeIcon icon={faGithub} size="3x" color="white" /></a>
-                    <a className="social-icon gmail"><FontAwesomeIcon icon={faEnvelope} size="3x" color="white" /></a>
-                    <a className="social-icon linkedin"><FontAwesomeIcon icon={faLinkedin} size="3x" color="white" /></a>
+                    <a href="https://www.instagram.com/meet_2909/" target="_blank" className="social-icon instagram"><FontAwesomeIcon icon={faInstagram} size="3x" color="white" /></a>
+                    <a href="https://github.com/MeetGami/" target="_blank" className="social-icon github"><FontAwesomeIcon icon={faGithub} size="3x" color="white" /></a>
+                    <a href="mailto:meet97gami@gmail.com" target="_blank" className="social-icon gmail"><FontAwesomeIcon icon={faEnvelope} size="3x" color="white" /></a>
+                    <a href="https://linkedin.com/in/meetgami/" target="_blank" className="social-icon linkedin"><FontAwesomeIcon icon={faLinkedin} size="3x" color="white" /></a>
                   </div>
                 </div>
               </div>
               <div className="col-md-5">
-                <img src={DA11} alt="home pic" className="img-fluid d-none" style={{ maxHeight: "350px", borderRadius: "10px" }} />
+                <img src={DA11} alt="home pic" className="img-fluid d-none"/>
               </div>
             </div>
           </div>

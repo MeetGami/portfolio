@@ -12,13 +12,13 @@ const AboutMe = () => {
       }, []);
     return(
         <div className="aboutme" id="aboutme" data-aos="zoom-in">
-            <div style={{padding:"30px 0px"}}>
+            <div className="heading">
                 <h4>About Me</h4>
             </div>
             <div className="container" data-aos="zoom-in">
-                <div className="card" style={{display: "flex",flexDirection:"row",alignItems:"center",justifyContent:"center",height:"510px",boxShadow:"0 5px 10px rgba(0, 0, 0, 0.5)"}}>
+                <div className="card">
                     <div className="col-md-5">
-                        <img style={{width:"100%",height:"100%"}} src={aboutme} />
+                        <img className="aboutimg" src={aboutme} />
                     </div>
                     <div className="col-md-7">
                         <p className="description" data-aos="fade-down">Experienced Senior Full Stack Java Developer with 4.5 years of hands-on expertise in backend development, frontend architecture, and building high-performance, responsive web applications.</p>

@@ -18,24 +18,23 @@ const ContactMe = () => {
     };
     return(
         <div className="contactme" data-aos="zoom-in">
-            <div style={{padding:"30px 0px"}}>
+            <div className="heading">
                 <h4>Contact Me</h4>
             </div>
             <div className="container" data-aos="zoom-in">
-                <div className="card" style={{display: "flex",flexDirection:"row",alignItems:"center",justifyContent:"center",height:"510px",boxShadow:"none",border:"0px"}}>
+                <div className="card">
                     <div className="col-md-5">
-                        <img style={{width:"100%",height:"100%"}} src={contactme} />
+                        <img className="contactimg" src={contactme} />
                     </div>
                     <div className="col-md-7">
-                        <div style={{display: "flex",flexDirection: "column",gap: "80px",alignItems:"center"}}>
-                            <p className="description" data-aos="fade-down" style={{margin: "-100px 0px 0px 0px",fontSize: "40px",fontFamily: "fantasy"}}>"Let’s Turn Your Ideas into Reality!"</p>
-                            <p className="description" data-aos="fade-down" style={{fontSize: "20px",padding:"0px 20px"}}>Got a project in mind or a creative spark that needs igniting? Don’t hesitate to reach out! I’m here to bring your vision to life and craft something extraordinary together. Your dream is just a message away!</p>
+                        <div className="contact-tag-line">
+                            <p className="description1" data-aos="fade-down">"Let’s Turn Your Ideas into Reality!"</p>
+                            <p className="description2" data-aos="fade-down">Got a project in mind or a creative spark that needs igniting? Don’t hesitate to reach out! I’m here to bring your vision to life and craft something extraordinary together. Your dream is just a message away!</p>
                         </div>
-                        <div style={{gap: "10px",display: "flex",justifyContent: "center",alignItems: "center"}}>
-                            <button className="btn btn-warning" onClick={handleCopyEmail} style={{borderRadius: "10px",padding: "0px 5px",fontSize: "13px"}}>
+                        <div className="contact-mail">
+                            <button className="btn btn-warning" onClick={handleCopyEmail}>
                                 <FontAwesomeIcon icon={faEnvelope} size="3x" color="white" />
                             </button>
-                            {/* <div class="callout top">test</div> */}
                         </div>
                     </div>
                 </div>

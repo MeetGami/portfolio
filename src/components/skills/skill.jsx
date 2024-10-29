@@ -23,11 +23,11 @@ const Skill = () => {
       }, []);
     return (
         <div className="skill" data-aos="zoom-in">
-            <div style={{padding:"30px 0px"}}>
+            <div className="heading">
                 <h4>Skills & Language's</h4>
             </div>
             <div className="container" data-aos="zoom-in">
-                <div className="card" style={{background: "transparent",boxShadow: "unset",border: "0px",height:"150px"}}>
+                <div className="card">
                     <div className="imageheader">
                         <img src={javasvg}></img>
                         <img src={jssvg}></img>
