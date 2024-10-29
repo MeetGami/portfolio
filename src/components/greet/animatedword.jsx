@@ -1,5 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
-import './animatedWord.css'; // Assuming you place your CSS in this file
+// import './animatedWord.css'; // Assuming you place your CSS in this file
+import "./animatedword.css"
 
 const AnimatedWord = () => {
   const [activeIndex, setActiveIndex] = useState(0);
