@@ -42,7 +42,13 @@ const Navbar = () => {
                     </div>
                     <div className="nav-item">
                         <a className="nav-link" onClick={() => {
-                          window.open('public/MeetGamiResume.pdf', '_blank');
+                      
+                      const link = document.createElement('a');
+                      link.href = '/MeetGamiResume.pdf';
+                      link.target='_blank'
+                      document.body.appendChild(link);
+                      link.click();
+                      document.body.removeChild(link);
                     }}><FontAwesomeIcon icon={faFileAlt} size="1x" color="black" /> Resume</a>
                     </div>
                     </div>
