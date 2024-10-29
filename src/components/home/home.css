@@ -1,0 +1,15 @@
+.App {
+    text-align: center
+}
+.project{
+    color: white;
+}
+
+.project .container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0px 30px;
+  flex-wrap: wrap; /* Allows wrapping of cards on smaller screens */
+}
